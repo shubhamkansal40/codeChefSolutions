@@ -11,3 +11,16 @@
 /home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.dll
 /home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.pdb
 /home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.genruntimeconfig.cache
+D:\Development\Dev_Projects\codeChefSolutions\bin\Debug\netcoreapp3.1\shubhamtestapp.exe
+D:\Development\Dev_Projects\codeChefSolutions\bin\Debug\netcoreapp3.1\shubhamtestapp.deps.json
+D:\Development\Dev_Projects\codeChefSolutions\bin\Debug\netcoreapp3.1\shubhamtestapp.runtimeconfig.json
+D:\Development\Dev_Projects\codeChefSolutions\bin\Debug\netcoreapp3.1\shubhamtestapp.runtimeconfig.dev.json
+D:\Development\Dev_Projects\codeChefSolutions\bin\Debug\netcoreapp3.1\shubhamtestapp.dll
+D:\Development\Dev_Projects\codeChefSolutions\bin\Debug\netcoreapp3.1\shubhamtestapp.pdb
+D:\Development\Dev_Projects\codeChefSolutions\obj\Debug\netcoreapp3.1\shubhamtestapp.csprojAssemblyReference.cache
+D:\Development\Dev_Projects\codeChefSolutions\obj\Debug\netcoreapp3.1\shubhamtestapp.AssemblyInfoInputs.cache
+D:\Development\Dev_Projects\codeChefSolutions\obj\Debug\netcoreapp3.1\shubhamtestapp.AssemblyInfo.cs
+D:\Development\Dev_Projects\codeChefSolutions\obj\Debug\netcoreapp3.1\shubhamtestapp.csproj.CoreCompileInputs.cache
+D:\Development\Dev_Projects\codeChefSolutions\obj\Debug\netcoreapp3.1\shubhamtestapp.dll
+D:\Development\Dev_Projects\codeChefSolutions\obj\Debug\netcoreapp3.1\shubhamtestapp.pdb
+D:\Development\Dev_Projects\codeChefSolutions\obj\Debug\netcoreapp3.1\shubhamtestapp.genruntimeconfig.cache

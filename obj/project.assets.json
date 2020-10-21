@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "/home/shuhbhamkansal40/.nuget/packages/": {}
+    "C:\\Users\\shubh\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/shuhbhamkansal40/shubhamtestapp/shubhamtestapp.csproj",
+      "projectUniqueName": "D:\\Development\\Dev_Projects\\codeChefSolutions\\shubhamtestapp.csproj",
       "projectName": "shubhamtestapp",
-      "projectPath": "/home/shuhbhamkansal40/shubhamtestapp/shubhamtestapp.csproj",
-      "packagesPath": "/home/shuhbhamkansal40/.nuget/packages/",
-      "outputPath": "/home/shuhbhamkansal40/shubhamtestapp/obj/",
+      "projectPath": "D:\\Development\\Dev_Projects\\codeChefSolutions\\shubhamtestapp.csproj",
+      "packagesPath": "C:\\Users\\shubh\\.nuget\\packages\\",
+      "outputPath": "D:\\Development\\Dev_Projects\\codeChefSolutions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/shuhbhamkansal40/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\shubh\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -56,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }
