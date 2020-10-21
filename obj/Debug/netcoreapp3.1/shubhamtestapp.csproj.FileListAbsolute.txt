@@ -1,0 +1,13 @@
+/home/shuhbhamkansal40/shubhamtestapp/bin/Debug/netcoreapp3.1/shubhamtestapp
+/home/shuhbhamkansal40/shubhamtestapp/bin/Debug/netcoreapp3.1/shubhamtestapp.deps.json
+/home/shuhbhamkansal40/shubhamtestapp/bin/Debug/netcoreapp3.1/shubhamtestapp.runtimeconfig.json
+/home/shuhbhamkansal40/shubhamtestapp/bin/Debug/netcoreapp3.1/shubhamtestapp.runtimeconfig.dev.json
+/home/shuhbhamkansal40/shubhamtestapp/bin/Debug/netcoreapp3.1/shubhamtestapp.dll
+/home/shuhbhamkansal40/shubhamtestapp/bin/Debug/netcoreapp3.1/shubhamtestapp.pdb
+/home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.csprojAssemblyReference.cache
+/home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.AssemblyInfoInputs.cache
+/home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.AssemblyInfo.cs
+/home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.csproj.CoreCompileInputs.cache
+/home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.dll
+/home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.pdb
+/home/shuhbhamkansal40/shubhamtestapp/obj/Debug/netcoreapp3.1/shubhamtestapp.genruntimeconfig.cache
