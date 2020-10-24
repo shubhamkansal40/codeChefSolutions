@@ -13,9 +13,117 @@ namespace shubhamtestapp
             //TSORT();
             //FLOW004();
             //LUCKFOUR();
-            FLOW007();
+            //FLOW007();
+            CHEGLOVE();
         }
+        public static void CHEGLOVE()
+        {
+            string Tstr = Console.ReadLine();
+            int T = 0;
+            int.TryParse(Tstr, out T);
+            string[] ArrResult = new string[T];
 
+            for (int ndex = 0; ndex < T; ndex++)
+            {
+                {
+                    int NumberofFingers = 0;
+
+                    NumberofFingers = int.Parse(Console.ReadLine());
+                    string line = Console.ReadLine();
+                    string[] tokens = line.Split(' ');
+                    int[] LengthofFingers = Array.ConvertAll(tokens, int.Parse);
+                    line = "";
+
+                    line = Console.ReadLine();
+                    tokens = line.Split(' ');
+                    int[] LengthofSheaths = Array.ConvertAll(tokens, int.Parse);
+                    if (ndex == (T - 1))
+                    {
+                        string Result = "none";
+                        bool fFront = true, fBack = true;
+
+                        ///Loop for Front
+                        for (int ndexOuter = 0; ndexOuter < LengthofFingers.Length; ndexOuter++)
+                        {
+                            for (int ndexInner = 0; ndexInner < LengthofSheaths.Length; ndexInner++)
+                            {
+                                if (LengthofFingers[ndexOuter] != LengthofSheaths[ndexInner])
+                                {
+                                    fFront = false;
+                                    break;
+                                }
+                                else
+                                {
+                                    fFront = true;
+                                    break;
+                                }
+                            }
+                            if (!fFront)
+                            {
+                                break;
+                            }
+                        }
+
+                        ///Loop for back
+                        for (int ndexOuter = 0; ndexOuter < LengthofFingers.Length; ndexOuter++)
+                        {
+                            for (int ndexInner = (LengthofSheaths.Length - 1); ndexInner >= 0; ndexInner--)
+                            {
+                                if (LengthofFingers[ndexOuter] == LengthofSheaths[ndexInner])
+                                {
+                                    fBack = true;
+                                  
+                                }
+                                else
+                                {
+                                    fBack =      false;                              
+                                }
+                            }
+                            if (!fBack)
+                            {
+                                break;
+                            }
+                        }
+
+
+                        while (NumberofFingers > 0)
+                        {
+                            int nUp = 0, nDown = NumberofFingers;
+                            if (LengthofFingers[nUp] == LengthofSheaths[nDown])
+                                nUp++;
+                            nDown--;
+                            NumberofFingers--;
+                        }
+
+                        if (fFront && fBack)
+                        {
+                            Result = "both";
+                        }
+                        else if (fFront)
+                        {
+                            Result = "front";
+                        }
+                        else if (fBack)
+                        {
+                            Result = "back";
+                        }
+                        else
+                        {
+                            Result = "none";
+                        }
+
+                        ArrResult[ndex] = Result;
+                    }
+                }
+            }
+
+
+
+            for (int ndex = 0; ndex < T; ndex++)
+            {
+                Console.WriteLine(ArrResult[ndex]);
+            }
+        }
         public static void FLOW007()
         {
             string Tstr = Console.ReadLine();
@@ -31,7 +139,7 @@ namespace shubhamtestapp
                 while (num > 0)
                 {
                     rem = num % 10;
-                    sum =( sum*10)  + rem ;
+                    sum = (sum * 10) + rem;
                     num = num / 10;
                 }
 
