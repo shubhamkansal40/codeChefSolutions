@@ -7,121 +7,191 @@ namespace shubhamtestapp
     {
         static void Main(string[] args)
         {
-            // FCTRL2();
+            //FCTRL2();
             //FLOW002();
             //INTEST();
             //TSORT();
             //FLOW004();
             //LUCKFOUR();
             //FLOW007();
-            CHEGLOVE();
+            //CHEGLOVE();
+            //CODERLIF();
+            // ADADISH();
+            April_LunchTime Obj_April_LunchTime = new April_LunchTime();
+            //Obj_April_LunchTime.vNumOfTimesSongCanBePlayedFull();
+            Obj_April_LunchTime.vEquinox();
         }
+
+        public static void ADADISH()
+        {
+
+            string Tstr = Console.ReadLine();
+            int T = 0;
+            int.TryParse(Tstr, out T);
+            int[] ArrResult = new int[T];
+
+            for (int ndex = 0; ndex < T; ndex++)
+            {
+                string line = Console.ReadLine();
+                string[] tokens = line.Split(' ');
+                int[] minutesToBake = Array.ConvertAll(tokens, int.Parse);
+                Array.Sort(minutesToBake);
+
+
+                // ArrResult[ndex] = sum;//count;
+            }
+            for (int ndex = 0; ndex < T; ndex++)
+            {
+                Console.WriteLine(ArrResult[ndex]);
+            }
+        }
+        public static void CODERLIF()
+        {
+            //Need to convert it to c++ to submit on code chef complier/IDE
+            string Tstr = Console.ReadLine();
+            int T = 0;
+            int.TryParse(Tstr, out T);
+            string[] ArrResult = new string[T];
+            for (int ndex = 0; ndex < T; ndex++)
+            {
+                string line = Console.ReadLine();
+                string[] tokens = line.Split(' ');
+                int[] numbers = Array.ConvertAll(tokens, int.Parse);
+
+                int countOfCodingDays = 0;
+                bool DisplayCodeLifeMatters = false;
+                for (int ndexinner = 0; ndexinner < numbers.Length; ndexinner++)
+                {
+                    if (numbers[ndexinner] == 1)
+                    {
+                        countOfCodingDays++;
+                    }
+                    if (numbers[ndexinner] == 0)
+                    {
+                        countOfCodingDays = 0;
+                    }
+                    if (countOfCodingDays > 5)
+                    {
+                        DisplayCodeLifeMatters = true;
+                        break;
+                    }
+                }
+
+
+                if (DisplayCodeLifeMatters)
+                {
+                    ArrResult[ndex] = "#coderlifematters";
+                }
+                else
+                {
+                    ArrResult[ndex] = "#allcodersarefun";
+                }
+
+            }
+
+            for (int ndex = 0; ndex < T; ndex++)
+            {
+                Console.WriteLine(ArrResult[ndex]);
+            }
+        }
+
         public static void CHEGLOVE()
         {
             string Tstr = Console.ReadLine();
             int T = 0;
             int.TryParse(Tstr, out T);
-            string[] ArrResult = new string[T];
-
-            for (int ndex = 0; ndex < T; ndex++)
+            if (T >= 1 && T <= 10)
             {
+                string[] ArrResult = new string[T];
+
+                for (int ndex = 0; ndex < T; ndex++)
                 {
-                    int NumberofFingers = 0;
-
-                    NumberofFingers = int.Parse(Console.ReadLine());
-                    string line = Console.ReadLine();
-                    string[] tokens = line.Split(' ');
-                    int[] LengthofFingers = Array.ConvertAll(tokens, int.Parse);
-                    line = "";
-
-                    line = Console.ReadLine();
-                    tokens = line.Split(' ');
-                    int[] LengthofSheaths = Array.ConvertAll(tokens, int.Parse);
-                    if (ndex == (T - 1))
                     {
-                        string Result = "none";
-                        bool fFront = true, fBack = true;
+                        int NumberofFingers = 0;
 
-                        ///Loop for Front
-                        for (int ndexOuter = 0; ndexOuter < LengthofFingers.Length; ndexOuter++)
+                        NumberofFingers = int.Parse(Console.ReadLine());
+                        if (NumberofFingers >= 1 && NumberofFingers <= (Math.Pow(10, 5)))
                         {
-                            for (int ndexInner = 0; ndexInner < LengthofSheaths.Length; ndexInner++)
+                            string line = Console.ReadLine();
+                            string[] tokens = line.Split(' ');
+                            int[] LengthofFingers = Array.ConvertAll(tokens, int.Parse);
+                            line = "";
+
+                            line = Console.ReadLine();
+                            tokens = line.Split(' ');
+                            int[] LengthofSheaths = Array.ConvertAll(tokens, int.Parse);
+                            string Result = "none";
+
+
+                            bool fFront = true, fBack = true;
+
+                            ///Loop for Front
+                            for (int ndexOuter = 0; ndexOuter < LengthofFingers.Length; ndexOuter++)
                             {
-                                if (LengthofFingers[ndexOuter] != LengthofSheaths[ndexInner])
+                                if (
+                                    LengthofFingers[ndexOuter] <= LengthofSheaths[ndexOuter])
+                                {
+                                    fFront = true;
+
+                                }
+                                else
                                 {
                                     fFront = false;
                                     break;
                                 }
-                                else
-                                {
-                                    fFront = true;
-                                    break;
-                                }
                             }
-                            if (!fFront)
-                            {
-                                break;
-                            }
-                        }
 
-                        ///Loop for back
-                        for (int ndexOuter = 0; ndexOuter < LengthofFingers.Length; ndexOuter++)
-                        {
-                            for (int ndexInner = (LengthofSheaths.Length - 1); ndexInner >= 0; ndexInner--)
+
+
+                            int nUp = 0, nDown = NumberofFingers - 1;
+                            while (NumberofFingers > 0)
                             {
-                                if (LengthofFingers[ndexOuter] == LengthofSheaths[ndexInner])
+
+                                if (LengthofFingers[nUp] <= LengthofSheaths[nDown])
                                 {
                                     fBack = true;
-                                  
                                 }
                                 else
                                 {
-                                    fBack =      false;                              
+                                    fBack = false;
+                                    break;
                                 }
-                            }
-                            if (!fBack)
-                            {
-                                break;
-                            }
-                        }
 
-
-                        while (NumberofFingers > 0)
-                        {
-                            int nUp = 0, nDown = NumberofFingers;
-                            if (LengthofFingers[nUp] == LengthofSheaths[nDown])
                                 nUp++;
-                            nDown--;
-                            NumberofFingers--;
-                        }
+                                nDown--;
+                                NumberofFingers--;
+                            }
 
-                        if (fFront && fBack)
-                        {
-                            Result = "both";
-                        }
-                        else if (fFront)
-                        {
-                            Result = "front";
-                        }
-                        else if (fBack)
-                        {
-                            Result = "back";
-                        }
-                        else
-                        {
-                            Result = "none";
-                        }
+                            if (fFront && fBack)
+                            {
+                                Result = "both";
+                            }
+                            else if (fFront)
+                            {
+                                Result = "front";
+                            }
+                            else if (fBack)
+                            {
+                                Result = "back";
+                            }
+                            else
+                            {
+                                Result = "none";
+                            }
 
-                        ArrResult[ndex] = Result;
+
+
+                            ArrResult[ndex] = Result;
+                        }
                     }
                 }
-            }
 
 
 
-            for (int ndex = 0; ndex < T; ndex++)
-            {
-                Console.WriteLine(ArrResult[ndex]);
+                for (int ndex = 0; ndex < T; ndex++)
+                {
+                    Console.WriteLine(ArrResult[ndex]);
+                }
             }
         }
         public static void FLOW007()
